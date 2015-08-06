@@ -6,7 +6,6 @@
  *  Made by Sandy Duan
  *  Under MIT License
  */
-;
 (function($, window, document, undefined) {
 
     'use strict';
@@ -195,8 +194,6 @@
                     this.setContent(this.getContent());
                 } else {
                     this.setContentASync(this.options.content);
-                    this.displayContent();
-                    return;
                 }
                 $target.show();
             }
@@ -462,9 +459,8 @@
             if (this.getTrigger() === 'click') {
                 if (this._targetclick) {
                     this._targetclick = false;
-                } else {
-                    this.hideAll();
                 }
+                this.hideAll();
             }
         },
 

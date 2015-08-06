@@ -1,4 +1,3 @@
-;
 (function($, window, document, undefined) {
 
     'use strict';
@@ -452,9 +451,8 @@
             if (this.getTrigger() === 'click') {
                 if (this._targetclick) {
                     this._targetclick = false;
-                } else {
-                    this.hideAll();
                 }
+                this.hideAll();
             }
         },
 
